@@ -1,5 +1,5 @@
 body{
-    background-color: #f8f7ee;
+    background-color: #ffffff;
 }
 sidebar{
     position: fixed;
@@ -11,16 +11,16 @@ sidebar{
     height: 100vh;
     z-index: 1000;
     background-color: #f8f7ee;
+    border-right: 2px solid rgb(88, 88, 88);
+    height: 100vh;
+    
 }
 .sidebar_content{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    margin: 12px;
-    height: 100%;
 }
 .sidebar_content .icon{
     padding-bottom: 50px;
+    justify-content: center;
 }
 
 .sidebar_content .icons_bottom{
@@ -33,46 +33,51 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 60px;
     z-index: 999;
     background-color: #f8f7ee;
 }
 
 .header_content{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 25px 5px 100px;
+    align-items:center;
+    padding: 14px 0 0 120px;
+    justify-content: space-around;
 }
 
 .header_content input{
-    text-decoration: none;
-    width: 60vh;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    width: 100vh;
     height: 30px;
     border-radius: 8px;
-    text-decoration: none;
 }
-.header_content img{
-    padding-top: 3px;
-}
+
 
 .login_section{
     display: flex;
-    justify-content: center;
-    width: 20vh;
+    justify-content: space-evenly;
+    width: 18vh;
+    align-items: flex-start;
 }
-.login_section button{
+
+.header_content button{
+    border-style: none;
+    height: 30px;
+    color: #f8f7ee;
+    background-color: rgb(12, 11, 10);
+    border-radius: 40px;
     width: 50px;
-    margin: 8PX;
 }
 
 main{
     display: flex;
-    margin: 100px 0 0 92px;
+    margin: 40px 0 0 73px;
 }
 
 .main_content {
-    column-count: 6; 
+    column-count: 4; 
     column-gap: 20px;
     padding: 20px 0 0 20px;
 }
@@ -88,7 +93,7 @@ main{
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 /*   Responsividade   */
