@@ -1,0 +1,47 @@
+sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 80px;
+    height: 100vh;
+    background-color: #eeeedd;
+}
+.sidebar_content{
+    text-align: center;
+    margin: 12px;
+}
+.sidebar_content .icon{
+    padding-bottom: 50px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 104px;
+    right: 0;
+    height: 50px;
+    background-color: #eeeedd;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 8px
+}
+input{
+    text-decoration: none;
+    width: 80vh;
+    height: 30px;
+}
+.login_section{
+    display: flex;
+    justify-content: center;
+    width: 20vh;
+}
+.login_section button{
+    width: 10vh;
+
+}
