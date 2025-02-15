@@ -7,7 +7,6 @@ CatPics é um site inspirado no Pinterest, mas totalmente focado em fotos de gat
 - **HTML**: Estrutura do site.
 - **CSS**: Estilização e responsividade.
 - **JavaScript**: Interatividade e funcionalidades dinâmicas.
-- **API de Imagens**: Fornecimento das fotos de gatos.
 
 ## 📖 Funcionalidades
 - Exibição de imagens de gatos.
