@@ -1,7 +1,7 @@
 # PinCat - Compartilhe e Descubra Fotos de Gatos!
 
 ## ✨ Sobre o Projeto
-CatPics é um site inspirado no Pinterest, mas totalmente focado em fotos de gatos! Aqui, os amantes de felinos podem explorar, salvar e compartilhar imagens de gatos de forma simples e intuitiva.
+CatPics é um site inspirado no Pinterest porém totalmente focado em fotos de gatos! Aqui os amantes de felinos podem explorar, salvar e compartilhar imagens de gatos de forma simples e intuitiva.
 
 ## 📝 Tecnologias Utilizadas
 - **HTML**: Estrutura do site.
