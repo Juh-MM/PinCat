@@ -16,7 +16,7 @@ CatPics é um site inspirado no Pinterest, mas totalmente focado em fotos de gat
 ## 🛠 Como Executar o Projeto
 1. Clone este repositório:
    ```sh
-   git clone https://github.com/seu-usuario/pincat.git
+   git clone https://github.com/seu-usuario/PinCat.git
    ```
 2. Acesse a pasta do projeto:
    ```sh
