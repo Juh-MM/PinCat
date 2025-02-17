@@ -10,17 +10,19 @@ sidebar{
     width: 50px;
     height: 100vh;
     z-index: 1000;
-    background-color: #f8f7ee;
-    border-right: 2px solid rgb(88, 88, 88);
+    background-color: #9AAE90;
     height: 100vh;
+    border-bottom-right-radius: 70px;
     
 }
 .sidebar_content{
     text-align: center;
 }
+
 .sidebar_content .icon{
     padding-bottom: 50px;
     justify-content: center;
+    color: #ffff;
 }
 
 .sidebar_content .icons_bottom{
@@ -29,46 +31,68 @@ sidebar{
 
 
 header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 80px;
     z-index: 999;
-    background-color: #f8f7ee;
+    background-color: #ffffff;
+    padding: 0 0 0 100px;
 }
 
 .header_content{
     display: flex;
-    align-items:center;
-    padding: 14px 0 0 120px;
-    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .header_content input{
+    background-color: #9AAE90;
     align-items: center;
     justify-content: center;
     border-style: none;
-    width: 100vh;
-    height: 30px;
+    width: fit-content;
+    height: 40px;
+    width: 100%;
     border-radius: 8px;
+    outline: none;
 }
 
+input::placeholder{
+    color: #ffffff;
+}
+
+input:hover{
+    background-color: #67815a;
+}
 
 .login_section{
     display: flex;
-    justify-content: space-evenly;
-    width: 18vh;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 .header_content button{
     border-style: none;
-    height: 30px;
+    height: 40px;
     color: #f8f7ee;
-    background-color: rgb(12, 11, 10);
-    border-radius: 40px;
-    width: 50px;
+    background-color: #9AAE90;
+    border-radius: 10px;
+    width: 60px;
+}
+
+.header_content button:hover{
+    background-color: #67815a;
+}
+
+.header_content .icon{
+    padding: 0 0 0 10px;
 }
 
 main{
@@ -127,15 +151,15 @@ main{
     border-style: none;
     height: 40px;
     color: #f8f7ee;
-    background-color: #7c7213;
-    border-radius: 40px;
+    background-color: #9AAE90;
+    border-radius: 10px;
     width: 70px;
     cursor: pointer;
     margin: 5px;
 }
 
 .button:hover {
-    background-color: #5f5605;
+    background-color: #67815a;
 }
 
 /*   Responsividade   */

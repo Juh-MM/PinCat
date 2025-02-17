@@ -1,7 +1,6 @@
 document.querySelectorAll(".card").forEach((card) => {
     const overlay = card.querySelector(".overlay");
 
-    // Adicionando os botões na overlay quando o mouse entra
     card.addEventListener("mouseenter", () => {
         const buttonSave = document.createElement("button");
         buttonSave.classList.add("button");
@@ -19,8 +18,7 @@ document.querySelectorAll(".card").forEach((card) => {
         overlay.appendChild(buttonMore);
     });
 
-    // Removendo os botões da overlay quando o mouse sai
     card.addEventListener("mouseleave", () => {
-        overlay.innerHTML = ''; // Remove todos os botões da overlay
+        overlay.innerHTML = '';
     });
 });
