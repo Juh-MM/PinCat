@@ -8,7 +8,6 @@ sidebar{
     bottom: 0;
     padding: 12px;
     width: 50px;
-    height: 100vh;
     z-index: 1000;
     background-color: #9AAE90;
     height: 100vh;
@@ -20,8 +19,9 @@ sidebar{
 }
 
 .sidebar_content .icon{
-    padding-bottom: 50px;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 header{
@@ -54,6 +54,8 @@ header{
     width: 100%;
     border-radius: 8px;
     outline: none;
+    padding: 0 0 0 12px;
+    color: #fff;
 }
 
 input::placeholder{
@@ -95,7 +97,7 @@ main{
 }
 
 .main_content {
-    column-count: 4; 
+    column-count: 5; 
     column-gap: 20px;
     padding: 20px 0 0 20px;
 }
