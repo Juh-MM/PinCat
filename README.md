@@ -1,7 +1,9 @@
 # PinCat - Compartilhe e Descubra Fotos de Gatos!
 
 ## ✨ Sobre o Projeto
-CatPics é um site totalmente focado em compartilhar fotos de gatos! Aqui, os amantes de felinos podem explorar, salvar e compartilhar imagens de gatos de forma simples e intuitiva.
+PinCat é um site totalmente focado em compartilhar fotos de gatos! Aqui, os amantes de felinos podem explorar, salvar e compartilhar imagens de gatos de forma simples e intuitiva.
+
+![Tela inicial](/img/2025-03-04%20(1).png)
 
 ## 📝 Tecnologias Utilizadas
 - **HTML**: Estrutura do site.
@@ -24,6 +26,10 @@ CatPics é um site totalmente focado em compartilhar fotos de gatos! Aqui, os am
    ```
 3. Abra o arquivo `index.html` no navegador.
 
+ou
+
+Acesse o link: https://dancing-manatee-802a8f.netlify.app/
+
 ## 🌟 Melhorias Futuras
 - Implementação de sistema de login para salvar favoritos.
 - Adicionar categorias e filtros para as imagens.
@@ -37,5 +43,5 @@ Desenvolvido por [Julia Martins](https://github.com/juh-mm).
 
 ---
 Divirta-se explorando e compartilhando as melhores fotos de gatos! 😺
-https://dancing-manatee-802a8f.netlify.app/
+
 
