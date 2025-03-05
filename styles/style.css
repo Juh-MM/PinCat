@@ -110,7 +110,7 @@ input:hover{
 
 main{
     display: flex;
-    margin: 70px 0 0 73px;
+    margin: 70px 10px 0 73px;
 }
 
 .main_content {
@@ -131,7 +131,7 @@ main{
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 10px;
 
 }
 

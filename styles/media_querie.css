@@ -16,44 +16,56 @@
 
 /* celulares */
 @media (max-width: 480px) {
-    header{
-        padding: 0 0 0 10px;
-        height: 70px;
-    }
-    .main_content {
-        padding: 0;
-        column-count: 3;
-        column-gap: 10px;
-
-    }
     sidebar{
         position: fixed;
         left: 0;
         bottom: 0;
         top: unset;
-        width: 100%; 
         height: 30px; 
         display: flex;
         flex-direction: row; 
-        justify-content: space-around;
         align-items: center;
         border-radius: 0;
         padding: 5px 0; 
-        width: 100% !important;
+        width: 100%;
     }
     .sidebar_content {
         display: flex;
         flex-direction: row; 
-        justify-content: space-around;
+        justify-content: space-evenly;
         width: 100%;
         height: 30px;
+    }
+    .sidebar_content .icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .icon .settings{
+        display: none;
     }
     .logo{
         display: none;
     }
-    
-    main{
-        margin: 50px 0 0 0;
+    header{
+        padding: 0 10px 0 10px;
+        height: 70px;
     }
-
+    .login_section {
+        padding: 0 0;
+    }
+    .login_section icon{
+        padding: 0 0;
+    }
+    header button{
+        display: none;
+    }
+    main{
+        margin: 75px 0 0 0;
+    }
+    .main_content {
+        padding: 0;
+        column-count: 3;
+        column-gap: 10px;
+    }
 }
