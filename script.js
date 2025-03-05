@@ -1,22 +1,22 @@
-document.getElementById("addContentIcon").addEventListener("click", function(event) {
-    event.preventDefault(); // Impede o link de redirecionar para 'create.html'
+// document.getElementById("addContentIcon").addEventListener("click", function(event) {
+//     event.preventDefault(); // Impede o link de redirecionar para 'create.html'
     
-    // Carregar o conteúdo de create.html
-    fetch('create.html')
-      .then(response => {
-        if (response.ok) {
-          return response.text(); // Retorna o conteúdo HTML como texto
-        } else {
-          throw new Error('Erro ao carregar o conteúdo');
-        }
-      })
-      .then(data => {
-        document.getElementById('conteudo').innerHTML = data; // Insere o conteúdo carregado no main
-      })
-      .catch(error => {
-        console.error('Erro:', error); // Exibe erro, caso não consiga carregar o conteúdo
-      });
-});
+//     // Carregar o conteúdo de create.html
+//     fetch('create.html')
+//       .then(response => {
+//         if (response.ok) {
+//           return response.text(); // Retorna o conteúdo HTML como texto
+//         } else {
+//           throw new Error('Erro ao carregar o conteúdo');
+//         }
+//       })
+//       .then(data => {
+//         document.getElementById('conteudo').innerHTML = data; // Insere o conteúdo carregado no main
+//       })
+//       .catch(error => {
+//         console.error('Erro:', error); // Exibe erro, caso não consiga carregar o conteúdo
+//       });
+// });
 
 document.querySelectorAll(".card").forEach((card) => {
     const overlay = card.querySelector(".overlay");

@@ -10,9 +10,7 @@ sidebar{
     width: 50px;
     z-index: 1000;
     background-color: #5d7e4e;
-    height: 100vh;
     border-bottom-right-radius: 70px;
-    
 }
 .sidebar_content{
     text-align: center;
@@ -109,14 +107,20 @@ input:hover{
 }
 
 main{
+    height: 100vh;
     display: flex;
-    margin: 70px 10px 0 73px;
+    margin: 70px 0 0 73px;
+}
+
+iframe{
+    width: 100%;
 }
 
 .main_content {
     column-count: 5; 
     column-gap: 20px;
-    padding: 20px 0 0 20px;
+    padding: 15px 0 0 15px;
+    height: 100%;
 }
 
 .card {
