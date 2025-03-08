@@ -16,6 +16,9 @@
 
 /* celulares */
 @media (max-width: 480px) {
+    body{
+        margin: 2px;
+    }
     sidebar{
         position: fixed;
         left: 0;
@@ -48,8 +51,8 @@
         display: none;
     }
     header{
-        padding: 0 10px 0 10px;
-        height: 70px;
+        padding: 0 4px 0 4px;
+        height: 60px;
     }
     .login_section {
         padding: 0 0;
@@ -61,11 +64,14 @@
         display: none;
     }
     main{
-        margin: 75px 0 0 0;
+        margin: 60px 0 0 0;
     }
     .main_content {
         padding: 0;
         column-count: 3;
-        column-gap: 10px;
+        column-gap: 6px;
+    }
+    .main_content .card{
+        margin-bottom: 6px;
     }
 }
