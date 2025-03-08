@@ -8,13 +8,18 @@
     "theme_color": "#ffffff",
     "icons": [
       {
-        "src": "/icons_app/Icon192.png",
+        "src": "img/icons_app/ic_launcher.png",
         "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "/icons/Icon512.png",
+        "src": "img/icons_app/playstore.png",
         "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons_app/appstore.png",
+        "sizes": "1024x1024",
         "type": "image/png"
       }
     ]
