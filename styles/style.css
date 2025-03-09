@@ -117,8 +117,8 @@ iframe{
 }
 
 .main_content {
-    column-count: 5; 
-    column-gap: 20px;
+    column-count: 4; 
+    column-gap: 15px;
     padding: 15px 0 0 15px;
     height: 100%;
 }
@@ -127,7 +127,7 @@ iframe{
     position: relative;
     display: inline-block;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     break-inside: avoid;
 }
 
@@ -158,45 +158,5 @@ iframe{
     background-color: #435a37;
 }
 
-
-/* Estilos para o popup */
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #00000080;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-}
-
-.popup-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.close-popup {
-    background-color: #5d7e4e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.close-popup:hover {
-    background-color: #435a37;
-}
 
 
