@@ -71,6 +71,7 @@ header{
 }
 
 button {    
+    text-decoration: none;
     border-style: none;
     height: 40px;
     color: #f8f7ee;
@@ -186,7 +187,7 @@ iframe{
 }
 
 .main_content_create form input{
-    align-items: center;
+    align-items: start;
     justify-content: center;
     height: 40px;
     width: 600px;
