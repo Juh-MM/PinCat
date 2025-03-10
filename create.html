@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/media_querie.css">
     <title>create</title>
 </head>
 <body>
-    <h1>CONSEGUIMOS</h1>
-    <img src="/img/gatoflor.jpg" alt="">
+    <div class="main_content_create">
+      <div class="texto">
+        <h1>Criar um novo post:</h1>
+      </div>
+      <div class="criacao">
+        <div class="arquivo">
+            <h3>Escolha um arquivo ou arraste a imagem aqui</h3>
+        </div>
+        <form>
+            <div class="form_content">
+                <label for=""><h2>Crie um título</h2></label>
+                <input type="text">
+                <label for=""><h2>Crie uma descrição (opicional)</h2></label>
+                <input class="descricao" type="text">
+                <label for=""><h2>Adicione um link (opicional)</h2></label>
+                <input type="text">
+            </div>
+            <button>Publicar</button>
+        </form> 
+      </div>
+    </div>
+<script src="/js/script.js"></script>
 </body>
 </html>
