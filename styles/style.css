@@ -150,6 +150,8 @@ iframe{
 }
 
 .main_content_create{
+    display: flex;
+    flex-direction: column;
     margin: 0 0 0 12px;
     height: 100vh;
     width: 100%;
@@ -158,7 +160,6 @@ iframe{
 .main_content_create .criacao{
     margin: 32px 0 0 0 ;
     display: flex;
-    width: fit-content;
     justify-content: center;
 }
 
@@ -187,10 +188,8 @@ iframe{
 }
 
 .main_content_create form input{
-    align-items: start;
     justify-content: center;
     height: 40px;
-    width: 600px;
     border-radius: 8px;
     padding: 0 0 0 12px;
     font-weight: 500;
