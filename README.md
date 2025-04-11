@@ -28,7 +28,7 @@ PinCat é um site totalmente focado em compartilhar fotos de gatos! Aqui, os ama
 
 ou
 
-Acesse o link: https://dancing-manatee-802a8f.netlify.app/
+Acesse o link: https://pincat.netlify.app/
 
 ## 🌟 Melhorias Futuras
 - Implementação de sistema de login para salvar favoritos.

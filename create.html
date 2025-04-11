@@ -15,21 +15,25 @@
       <div class="criacao">
         <div class="arquivo">
             <label for="myfile"><h3>Escolha um arquivo ou arraste a imagem aqui</h3></label>
-            <input type="file" id="myfile" name="myfile">
+            <input type="file" id="imageInput" accept="image/*">
         </div>
-        <form>
+        <form id="uploadForm">
             <div class="form_content">
-                <label for=""><h2>Crie um título</h2></label>
-                <input type="text">
-                <label for=""><h2>Crie uma descrição (opicional)</h2></label>
-                <input class="descricao" type="text">
-                <label for=""><h2>Adicione um link (opicional)</h2></label>
-                <input type="text">
+                <label for="">
+                  <h2>Crie um título (opicional)</h2></label>
+                <input id="uploadTitle" type="text">
+                <label for="">
+                  <h2>Crie uma descrição (opicional)</h2></label>
+                <input id="uploadDesc" class="descricao" type="text">
+                <label for="">
+                  <h2>Adicione um link (opicional)</h2></label>
+                <input id="uploadLink" type="text">
             </div>
-            <button>Publicar</button>
+            <button type="submit">Publicar</button>
         </form> 
       </div>
     </div>
 <script src="/js/script.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>
