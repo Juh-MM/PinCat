@@ -7,9 +7,3 @@ if ("serviceWorker" in navigator) {
     });
   }
 
-  const uploadForm = document.getElementById('uploadForm');
-  const uploadTitle = document.getElementById('uploadTitle');
-  const uploadDesc = document.getElementById('uploadDesc');
-  const uploadLink = document.getElementById('uploadLink');
-
-
