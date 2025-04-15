@@ -113,7 +113,6 @@ button:hover {
 }
 
 main{
-    height: 100vh;
     display: flex;
     margin: 70px 0 0 73px;
 }
@@ -126,7 +125,6 @@ iframe{
     column-count: 4; 
     column-gap: 15px;
     padding: 15px 0 0 15px;
-    height: 100%;
 }
 
 .card {
