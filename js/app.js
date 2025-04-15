@@ -8,77 +8,74 @@ const uploadTitle = document.getElementById('uploadTitle');
 const uploadDesc = document.getElementById('uploadDesc');
 const uploadLink = document.getElementById('uploadLink');
 
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
+//Carrega todas as imagens ao iniciar
 window.addEventListener('DOMContentLoaded', loadAllImages);
 
-//pesquisar uma imagem
+//Busca automática conforme digita
 searchInput.addEventListener('input', () => {
-    const query = searchInput.value.trim();
-    if (query === '') {
-      loadAllImages();
-    } else {
-      searchImages(query);
-    }
+  const query = searchInput.value.trim();
+  if (query === '') {
+    loadAllImages();
+  } else {
+    searchImages(query);
+  }
+});
+
+// Carregar todas as imagens
+async function loadAllImages() {
+  try {
+    const response = await fetch(API_URL);
+    let fotos = await response.json();
+
+    fotos = shuffleArray(fotos); //embaralha as fotos
+    displayImages(fotos);
+  } catch (error) {
+    console.error('Erro ao carregar imagens:', error);
+    gallery.innerHTML = '<p>Erro ao carregar imagens.</p>';
+  }
+}
+
+//Buscar imagens por título
+async function searchImages(query) {
+  try {
+    const response = await fetch(`${API_URL}/buscar?titulo=${encodeURIComponent(query)}`);
+    const fotos = await response.json();
+    displayImages(fotos);
+  } catch (error) {
+    console.error('Erro ao buscar imagens:', error);
+    gallery.innerHTML = '<p>Erro na busca de imagens.</p>';
+  }
+}
+
+//Exibir imagens na galeria
+function displayImages(fotos) {
+  gallery.innerHTML = '';
+
+  if (!fotos.length) {
+    gallery.innerHTML = '<p>Nenhuma imagem encontrada.</p>';
+    return;
+  }
+
+  fotos.forEach(foto => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+    card.innerHTML = `
+      <img src="${foto.url}" alt="${foto.title || 'Imagem'}">
+      <div>${foto.title || 'Sem título'}</div>
+    `;
+    gallery.appendChild(card);
   });
-  
-  async function loadAllImages() {
-    try {
-      const response = await fetch(API_URL);
-      const fotos = await response.json();
-      displayImages(fotos);
-    } catch (error) {
-      console.error('Erro ao carregar imagens:', error);
-    }
-  }
-  
-  async function searchImages(query) {
-    try {
-      const response = await fetch(`${API_URL}/search?q=${encodeURIComponent(query)}`);
-      const fotos = await response.json();
-      displayImages(fotos);
-    } catch (error) {
-      console.error('Erro ao buscar imagens:', error);
-    }
-  }
-  
-  function displayImages(fotos) {
-    gallery.innerHTML = ''; // limpa a galeria
-    if (fotos.length === 0) {
-      gallery.innerHTML = '<p>Nenhuma imagem encontrada.</p>';
-      return;
-    }
-  
-    fotos.forEach(foto => {
-      const card = document.createElement('div');
-      card.classList.add('card');
-      card.innerHTML = `
-        <img src="${foto.url}" alt="${foto.title || 'Imagem'}">
-        <div>${foto.title || 'Sem título'}</div>
-      `;
-      gallery.appendChild(card);
-    });
-  }
+}
 
-//upload de nova foto
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-      cb(null, 'uploads/');
-    },
-    filename: (req, file, cb) => {
-      const uniqueName = Date.now() + '-' + file.originalname;
-      cb(null, uniqueName);
-    }
-  });
-  const upload = multer({ storage });
-  
-  exports.uploadMiddleware = upload.single('image'); 
-
+//Upload de nova foto
 uploadForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-  // FormData para enviar arquivo de imagem junto com os outros dados
   const formData = new FormData();
-
   formData.append('image', imageInput.files[0]);
   formData.append('title', uploadTitle.value);
   formData.append('description', uploadDesc.value);
@@ -90,16 +87,14 @@ uploadForm.addEventListener('submit', async (e) => {
       body: formData
     });
 
-    if (response.ok) {
-      const result = await response.json();  
-      alert('Imagem publicada com sucesso!');
-      console.log(result); 
-      uploadForm.reset();  
-    } else {
-      throw new Error('Falha ao publicar a imagem');
-    }
+    if (!response.ok) throw new Error('Falha ao publicar imagem.');
+
+    const result = await response.json();
+    alert('Imagem publicada com sucesso!');
+    uploadForm.reset();
+    loadAllImages(); // Atualiza galeria após envio
   } catch (err) {
-    console.error('Erro ao enviar a imagem:', err);
-    alert('Houve um erro ao publicar a imagem.');
+    console.error('Erro ao enviar imagem:', err);
+    alert('Erro ao publicar imagem.');
   }
 });
