@@ -1,5 +1,5 @@
 body{
-    background-color: #ffffff;
+    background-color: #F5FAF3;
     /* temporario */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -40,7 +40,7 @@ header{
     right: 0;
     height: 80px;
     z-index: 999;
-    background-color: #ffffff;
+    background-color: #F5FAF3;
     padding: 0 0 0 100px;
 }
 
@@ -117,7 +117,6 @@ header a:hover {
 main{
     display: flex;
     margin: 70px 0 0 73px;
-    width: 100%;
 }
 
 iframe{
@@ -195,6 +194,7 @@ form{
     justify-content: center;
     height: 40px;
     border: 2px solid #435a37;
+    background-color: #F5FAF3;
     border-radius: 8px;
     outline: none;
     padding: 5px 12px;
