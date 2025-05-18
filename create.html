@@ -3,37 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/media_querie.css">
-    <title>create</title>
 </head>
 <body>
-  <div class="main_content_create">
-      <div class="texto">
-          <h1>Criar um novo post:</h1>
-      </div>
-      <div class="criacao">
-          <div class="arquivo">
-              <label for="myfile"><h3>Escolha um arquivo ou arraste a imagem aqui</h3></label>
-              <input type="file" id="imageInput" accept="image/*">
-          </div>
-          <form id="uploadForm">
-              <div class="form_content">
-                  <label for="uploadTitle">
-                      <h2>Crie um título (opicional)</h2></label>
-                  <input id="uploadTitle" type="text">
-                  <label for="uploadDesc">
-                      <h2>Crie uma descrição (opicional)</h2></label>
-                  <input id="uploadDesc" class="descricao" type="text">
-                  <label for="uploadLink">
-                      <h2>Adicione um link (opicional)</h2></label>
-                  <input id="uploadLink" type="text">
-              </div>
-              <button type="submit">Publicar</button>
-          </form> 
-      </div>
-  </div>
-
-  <script src="/js/app.js"></script>  <!-- Aqui estamos carregando o script -->
+    <main id="main_content_create">
+        <div class="main_content_create">
+    <div class="texto">
+        <h1>Criar um novo post:</h1>
+    </div>
+    <div class="criacao">
+        <div class="arquivo">
+            <label for="myfile"><h3>Escolha um arquivo ou arraste a imagem aqui</h3></label>
+            <input type="file" id="imageInput" accept="image/*">
+        </div>
+        <form id="uploadForm">
+            <div class="form_content">
+                <label for="uploadTitleInput">
+                    <h2>Crie um título (opicional)</h2></label>
+                <input id="uploadTitleInput" type="text">
+                <label for="uploadDescInput">
+                    <h2>Crie uma descrição (opicional)</h2></label>
+                <input class="descricao" id="uploadDescInput" type="text">
+                <label for="uploadLinkInput">
+                    <h2>Adicione um link (opicional)</h2></label>
+                <input id="uploadLinkInput" type="text">
+            </div>
+            <button type="submit">Publicar</button>
+        </form> 
+    </div>
+</div>
+</main>
 </body>
 </html>

@@ -6,3 +6,22 @@ if ("serviceWorker" in navigator) {
         .catch((err) => console.log("❌ Erro no Service Worker:", err));
     });
   }
+
+function carregarCreate() {
+  fetch('create.html')
+    .then(res => res.text())
+    .then(html => {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+      const novoConteudo = doc.getElementById('main_content_create')
+      if (novoConteudo) {
+        document.getElementById('main_content').innerHTML = novoConteudo.innerHTML;
+      } else {
+        document.getElementById('main_content').innerHTML = '<p>Erro: não encontrado</p>';
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById('main_content').innerHTML = '<p>Erro ao carregar tela</p>';
+    });
+}

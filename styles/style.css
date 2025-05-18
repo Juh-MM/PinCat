@@ -115,6 +115,7 @@ button:hover {
 main{
     display: flex;
     margin: 70px 0 0 73px;
+    width: 100%;
 }
 
 iframe{
@@ -150,15 +151,14 @@ iframe{
 .main_content_create{
     display: flex;
     flex-direction: column;
-    margin: 0 0 0 12px;
-    height: 100vh;
-    width: 100%;
+    margin: 0 0 0 20px;
+    width: 100% !important;
 }
 
 .main_content_create .criacao{
     margin: 32px 0 0 0 ;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .main_content_create .arquivo{
@@ -168,21 +168,25 @@ iframe{
     text-align: center;
     align-content: center;
     margin: 0 20px 0 0;
-    width: 30rem;
+    padding: 15px;
+    width: 40vw;
+    height: 60vh;
 }
 
-.main_content_create form{
+form{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-between;
     gap: 30px;
+    width: 40vw;
 }
 
 .main_content_create .form_content{
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     width: 100%;
-    align-items: flex-start;
 }
 
 .main_content_create form input{
