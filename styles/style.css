@@ -189,15 +189,17 @@ form{
     width: 100%;
 }
 
-.main_content_create form input{
+.main_content_create form input, textarea{
     justify-content: center;
     height: 40px;
+    border: 2px solid #435a37;
     border-radius: 8px;
-    padding: 0 0 0 12px;
+    outline: none;
+    padding: 5px 12px;
     font-weight: 500;
     letter-spacing: 1px;
-    border-color: #435a37;
     margin: 0 0 12px 0;
+    resize: none
 }
 
 .main_content_create .descricao{
