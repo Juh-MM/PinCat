@@ -1,3 +1,7 @@
+body{
+    background-color: #444
+}
+
 .login_content{
     display: flex;
     flex-direction: column;

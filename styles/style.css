@@ -70,20 +70,22 @@ header{
     height: 50px;
 }
 
-button {    
+header a {    
     text-decoration: none;
     border-style: none;
     height: 40px;
     color: #f8f7ee;
     background-color: #5d7e4e;
     border-radius: 10px;
-    width: 70px;
     cursor: pointer;
-    margin: 5px;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
 }
 
-button:hover {
+header a:hover {
     background-color: #435a37;
 }
 
@@ -104,7 +106,7 @@ button:hover {
 }
 
 
-.header_content button:hover{
+.header_content a:hover{
     background-color: #435a37;
 }
 
@@ -208,5 +210,20 @@ form{
 
 .main_content_create form button{
     margin: 0;
-    width: 90px;
+    padding: 0 15px;
+    text-decoration: none;
+    border-style: none;
+    height: 40px;
+    color: #f8f7ee;
+    background-color: #5d7e4e;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content_create form button:hover {
+    background-color: #435a37;
 }
