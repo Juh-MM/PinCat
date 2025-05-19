@@ -25,3 +25,11 @@ function carregarCreate() {
       document.getElementById('main_content').innerHTML = '<p>Erro ao carregar tela</p>';
     });
 }
+
+function abrirNotificacao() {
+  document.querySelector(".notificacao").style.display = "block";
+}
+
+function fecharNotificacao() {
+  document.querySelector(".notificacao").style.display = "none";
+}

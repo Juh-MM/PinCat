@@ -39,7 +39,7 @@ header{
     left: 0;
     right: 0;
     height: 80px;
-    z-index: 999;
+    z-index: 998;
     background-color: #F5FAF3;
     padding: 0 0 0 100px;
 }
@@ -117,6 +117,7 @@ header a:hover {
 main{
     display: flex;
     margin: 70px 0 0 73px;
+    z-index: 996;
 }
 
 iframe{
@@ -129,7 +130,7 @@ iframe{
     padding: 15px 0 0 15px;
 }
 
-.card {
+.main_content_home .card {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -137,12 +138,11 @@ iframe{
     break-inside: avoid;
 }
 
-.card img {
+.main_content_home .card img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
-
 }
 
 .main_content_home img:hover {
@@ -226,4 +226,85 @@ form{
 
 .main_content_create form button:hover {
     background-color: #435a37;
+}
+
+.notificacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 75px;
+    width: 300px;
+    z-index: 999;
+    background-color: #F5FAF3;
+    border-bottom-right-radius: 50px;
+    box-shadow: 200px 0 100px rgba(8, 19, 4, 0.5);
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(1%);
+}
+
+.notificacao_content{
+    padding: 20px;
+}
+
+.notificacao_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.fecharNotificacao {
+    cursor: pointer;
+}
+
+.notificacao_body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notificacao_body .card{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.notificacao_body .card img{
+    width: 50%;
+    border-radius: 8px;
+}
+
+.notificacao_body .card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card_header .titulo{
+    font-weight: 500;
+}
+
+.card_header .subtitulo{
+    color: #435a37;
+    cursor: pointer;
+}
+
+.card_content .mais {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.card_content .mais span{
+    display: flex;
+    align-items: center;
+    background-color: #5d7e4e;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
